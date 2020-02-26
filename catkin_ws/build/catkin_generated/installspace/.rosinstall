@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/samu/robotics/catkin_ws/install/setup.sh
