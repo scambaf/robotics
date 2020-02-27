@@ -59,7 +59,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate services in the 'srv' folder
  add_service_files(
    FILES
-   suma_to_int.srv
+   sum_two_int.srv
  )
 
 ## Generate actions in the 'action' folder

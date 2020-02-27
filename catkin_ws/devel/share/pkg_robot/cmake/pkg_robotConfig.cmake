@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(pkg_robot_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT " " STREQUAL " ")
+if(NOT "/home/samu/robotics/catkin_ws/devel/include " STREQUAL " ")
   set(pkg_robot_INCLUDE_DIRS "")
-  set(_include_dirs "")
+  set(_include_dirs "/home/samu/robotics/catkin_ws/devel/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/samu/robotics/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/samu/robotics/catkin_ws/devel/lib;/home/samu/robotics/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -177,7 +177,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(pkg_robot_EXPORTED_TARGETS "")
+set(pkg_robot_EXPORTED_TARGETS "pkg_robot_generate_messages_cpp;pkg_robot_generate_messages_eus;pkg_robot_generate_messages_lisp;pkg_robot_generate_messages_nodejs;pkg_robot_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${pkg_robot_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -214,7 +214,7 @@ foreach(depend ${depends})
   list(APPEND pkg_robot_EXPORTED_TARGETS ${${pkg_robot_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "pkg_robot-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${pkg_robot_DIR}/${extra})
