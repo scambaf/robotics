@@ -42,6 +42,22 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pkg_robot/action" TYPE FILE FILES "/home/samu/robotics/catkin_ws/src/pkg_robot/action/DoCarWash.action")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pkg_robot/msg" TYPE FILE FILES
+    "/home/samu/robotics/catkin_ws/devel/share/pkg_robot/msg/DoCarWashAction.msg"
+    "/home/samu/robotics/catkin_ws/devel/share/pkg_robot/msg/DoCarWashActionGoal.msg"
+    "/home/samu/robotics/catkin_ws/devel/share/pkg_robot/msg/DoCarWashActionResult.msg"
+    "/home/samu/robotics/catkin_ws/devel/share/pkg_robot/msg/DoCarWashActionFeedback.msg"
+    "/home/samu/robotics/catkin_ws/devel/share/pkg_robot/msg/DoCarWashGoal.msg"
+    "/home/samu/robotics/catkin_ws/devel/share/pkg_robot/msg/DoCarWashResult.msg"
+    "/home/samu/robotics/catkin_ws/devel/share/pkg_robot/msg/DoCarWashFeedback.msg"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pkg_robot/cmake" TYPE FILE FILES "/home/samu/robotics/catkin_ws/build/pkg_robot/catkin_generated/installspace/pkg_robot-msg-paths.cmake")
 endif()
 

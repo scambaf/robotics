@@ -1,2 +1,2 @@
-set(pkg_robot_MESSAGE_FILES "")
+set(pkg_robot_MESSAGE_FILES "/home/samu/robotics/catkin_ws/devel/share/pkg_robot/msg/DoCarWashAction.msg;/home/samu/robotics/catkin_ws/devel/share/pkg_robot/msg/DoCarWashActionGoal.msg;/home/samu/robotics/catkin_ws/devel/share/pkg_robot/msg/DoCarWashActionResult.msg;/home/samu/robotics/catkin_ws/devel/share/pkg_robot/msg/DoCarWashActionFeedback.msg;/home/samu/robotics/catkin_ws/devel/share/pkg_robot/msg/DoCarWashGoal.msg;/home/samu/robotics/catkin_ws/devel/share/pkg_robot/msg/DoCarWashResult.msg;/home/samu/robotics/catkin_ws/devel/share/pkg_robot/msg/DoCarWashFeedback.msg")
 set(pkg_robot_SERVICE_FILES "/home/samu/robotics/catkin_ws/src/pkg_robot/srv/sum_two_int.srv")
