@@ -215,6 +215,13 @@
 /home/samu/robotics/catkin_ws/build/fetch/fetch_ros/fetch_teleop/CMakeFiles/topic_tools_generate_messages_nodejs.dir
 /home/samu/robotics/catkin_ws/build/fetch/fetch_ros/fetch_teleop/CMakeFiles/nav_msgs_generate_messages_py.dir
 /home/samu/robotics/catkin_ws/build/fetch/fetch_ros/fetch_teleop/CMakeFiles/install.dir
+/home/samu/robotics/catkin_ws/build/package_fetch/CMakeFiles/install/strip.dir
+/home/samu/robotics/catkin_ws/build/package_fetch/CMakeFiles/edit_cache.dir
+/home/samu/robotics/catkin_ws/build/package_fetch/CMakeFiles/list_install_components.dir
+/home/samu/robotics/catkin_ws/build/package_fetch/CMakeFiles/test.dir
+/home/samu/robotics/catkin_ws/build/package_fetch/CMakeFiles/install/local.dir
+/home/samu/robotics/catkin_ws/build/package_fetch/CMakeFiles/rebuild_cache.dir
+/home/samu/robotics/catkin_ws/build/package_fetch/CMakeFiles/install.dir
 /home/samu/robotics/catkin_ws/build/fetch/fetch_gazebo/fetch_gazebo/CMakeFiles/install.dir
 /home/samu/robotics/catkin_ws/build/fetch/fetch_gazebo/fetch_gazebo/CMakeFiles/list_install_components.dir
 /home/samu/robotics/catkin_ws/build/fetch/fetch_gazebo/fetch_gazebo/CMakeFiles/rebuild_cache.dir

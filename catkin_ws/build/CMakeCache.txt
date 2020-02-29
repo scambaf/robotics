@@ -767,6 +767,9 @@ _gtest_INCLUDES:FILEPATH=/usr/include/gtest/gtest.h
 //Path to a file.
 _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 
+//The directory containing a CMake configuration file for _roscpp.
+_roscpp_DIR:PATH=_roscpp_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for actionlib.
 actionlib_DIR:PATH=/opt/ros/melodic/share/actionlib/cmake
 
@@ -1049,6 +1052,12 @@ octomap_msgs_DIR:PATH=/opt/ros/melodic/share/octomap_msgs/cmake
 
 //Path to a library.
 onelib:FILEPATH=/usr/lib/x86_64-linux-gnu/libsdformat.so
+
+//Value Computed by CMake
+package_fetch_BINARY_DIR:STATIC=/home/samu/robotics/catkin_ws/build/package_fetch
+
+//Value Computed by CMake
+package_fetch_SOURCE_DIR:STATIC=/home/samu/robotics/catkin_ws/src/package_fetch
 
 //Value Computed by CMake
 pkg_robot_BINARY_DIR:STATIC=/home/samu/robotics/catkin_ws/build/pkg_robot
@@ -1538,7 +1547,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=18
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=19
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
