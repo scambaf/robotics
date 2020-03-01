@@ -36,7 +36,7 @@ if __name__ == "__main__":
 
     rospy.loginfo("Waiting for arm_controller...") #Imprimimos en pantalla 
 
-                #Creamos una AcciÃ³n Cliente|nombre de la acciÃ³n :follow_joint_trajectory|especificaciÃ³n de la acciÃ³n
+    #Creamos una AcciÃ³n Cliente|nombre de la acciÃ³n :follow_joint_trajectory|especificaciÃ³n de la acciÃ³n
     arm_client = actionlib.SimpleActionClient("arm_controller/follow_joint_trajectory", FollowJointTrajectoryAction)
     
     arm_client.wait_for_server() #Si el AcciÃ³n Server no estÃ¡ disponible, esperamos
@@ -71,7 +71,7 @@ if __name__ == "__main__":
     #Agregamos al final de la Lista trajectory.points el tipo de mensaje JointTrajectoryPoint.msg
     trajectory.points.append(JointTrajectoryPoint())
     
-    trajectory.points[0].positions = arm_joint_positions0 #Asignamos la trayectoria a ejecutar
+    trajectory.points[0].positions = arm_joint_positions5 #Asignamos la trayectoria a ejecutar
     
     trajectory.points[0].velocities = [0.0] * len(arm_joint_positions0) #Asignamos los valores por default = 0
     
