@@ -1,0 +1,12 @@
+accel:
+  alignment_matrix: [0.0, -1.0, 0.0, -1.0, 0.0, 0.0, 0.0, 0.0, -1.0]
+  offset_vector: [2047, 2047, 2047]
+  sensitivity_matrix: [83, 83, 83]
+gyro:
+  alignment_matrix: [0.0, -1.0, 0.0, -1.0, 0.0, 0.0, 0.0, 0.0, -1.0]
+  offset_vector: [0, 0, 0]
+  sensitivity_matrix: [65.5, 65.5, 65.5]
+mag:
+  alignment_matrix: [-1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, -1.0]
+  offset_vector: [0, 0, 0]
+  sensitivity_matrix: [1100, 1100, 980]

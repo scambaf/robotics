@@ -1,0 +1,8 @@
+prefix=/home/lab/silop_ws/install
+
+Name: shimmer
+Description: Description of shimmer
+Version: 0.0.1
+Cflags: -I/home/lab/silop_ws/install/include
+Libs: -L/home/lab/silop_ws/install/lib 
+Requires: rospy roscpp std_msgs sensor_msgs geometry_msgs message_runtime

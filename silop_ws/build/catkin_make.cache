@@ -1,0 +1,2 @@
+shimmer:sicktoolbox:sicktoolbox_wrapper:silop:vrpn_client_ros
+-DCATKIN_DEVEL_PREFIX=/home/lab/silop_ws/devel -DCMAKE_INSTALL_PREFIX=/home/lab/silop_ws/install -G Unix Makefiles

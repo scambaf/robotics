@@ -1,0 +1,10 @@
+<launch>
+
+  	<node pkg="sicktoolbox_wrapper" type="sicklms" name="sicklms"
+        ns="sicklms" required="true" output="screen" />
+	<node pkg="silop" type="cliente" name="cliente"
+ />
+
+
+
+</launch>

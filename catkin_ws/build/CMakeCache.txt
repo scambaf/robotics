@@ -795,7 +795,7 @@ class_loader_DIR:PATH=/opt/ros/melodic/share/class_loader/cmake
 control_msgs_DIR:PATH=/opt/ros/melodic/share/control_msgs/cmake
 
 //The directory containing a CMake configuration file for control_toolbox.
-control_toolbox_DIR:PATH=/opt/ros/melodic/share/control_toolbox/cmake
+control_toolbox_DIR:PATH=control_toolbox_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for costmap_2d.
 costmap_2d_DIR:PATH=/opt/ros/melodic/share/costmap_2d/cmake
@@ -990,20 +990,41 @@ gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 //The directory containing a CMake configuration file for ignition-cmake0.
 ignition-cmake0_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0
 
+//The directory containing a CMake configuration file for ignition-cmake2.
+ignition-cmake2_DIR:PATH=/usr/share/cmake/ignition-cmake2
+
 //The directory containing a CMake configuration file for ignition-common1.
 ignition-common1_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/ignition-common1
+
+//The directory containing a CMake configuration file for ignition-common3-graphics.
+ignition-common3-graphics_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/ignition-common3-graphics
+
+//The directory containing a CMake configuration file for ignition-common3.
+ignition-common3_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/ignition-common3
 
 //The directory containing a CMake configuration file for ignition-fuel_tools1.
 ignition-fuel_tools1_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/ignition-fuel_tools1
 
+//The directory containing a CMake configuration file for ignition-fuel_tools4.
+ignition-fuel_tools4_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/ignition-fuel_tools4
+
 //The directory containing a CMake configuration file for ignition-math4.
 ignition-math4_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/ignition-math4
+
+//The directory containing a CMake configuration file for ignition-math6.
+ignition-math6_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/ignition-math6
 
 //The directory containing a CMake configuration file for ignition-msgs1.
 ignition-msgs1_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/ignition-msgs1
 
+//The directory containing a CMake configuration file for ignition-msgs5.
+ignition-msgs5_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/ignition-msgs5
+
 //The directory containing a CMake configuration file for ignition-transport4.
 ignition-transport4_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/ignition-transport4
+
+//The directory containing a CMake configuration file for ignition-transport8.
+ignition-transport8_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/ignition-transport8
 
 //The directory containing a CMake configuration file for image_transport.
 image_transport_DIR:PATH=/opt/ros/melodic/share/image_transport/cmake
@@ -1021,7 +1042,7 @@ kdl_parser_DIR:PATH=/opt/ros/melodic/share/kdl_parser/cmake
 laser_geometry_DIR:PATH=/opt/ros/melodic/share/laser_geometry/cmake
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/melodic/lib/libvoxel_grid.so
+lib:FILEPATH=/opt/ros/melodic/lib/libxmlrpcpp.so
 
 //The directory containing a CMake configuration file for map_msgs.
 map_msgs_DIR:PATH=/opt/ros/melodic/share/map_msgs/cmake
@@ -1051,7 +1072,7 @@ object_recognition_msgs_DIR:PATH=/opt/ros/melodic/share/object_recognition_msgs/
 octomap_msgs_DIR:PATH=/opt/ros/melodic/share/octomap_msgs/cmake
 
 //Path to a library.
-onelib:FILEPATH=/usr/lib/x86_64-linux-gnu/libsdformat.so
+onelib:FILEPATH=/usr/lib/x86_64-linux-gnu/libgazebo_ccd.so
 
 //Value Computed by CMake
 package_fetch_BINARY_DIR:STATIC=/home/samu/robotics/catkin_ws/build/package_fetch
@@ -1118,6 +1139,9 @@ rospy_DIR:PATH=/opt/ros/melodic/share/rospy/cmake
 
 //The directory containing a CMake configuration file for rostime.
 rostime_DIR:PATH=/opt/ros/melodic/share/rostime/cmake
+
+//The directory containing a CMake configuration file for sdformat9.
+sdformat9_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/sdformat9
 
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/melodic/share/sensor_msgs/cmake
@@ -1338,8 +1362,6 @@ BLAS_acml_LIBRARY-ADVANCED:INTERNAL=1
 BLAS_acml_mp_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: BLAS_blas_LIBRARY
 BLAS_blas_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: BLAS_blas_WORKS
-BLAS_blas_WORKS-ADVANCED:INTERNAL=1
 //Have function sgemm_
 BLAS_blas_WORKS:INTERNAL=1
 //ADVANCED property for variable: BLAS_complib.sgimath_LIBRARY
@@ -1547,7 +1569,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=19
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1613,13 +1635,13 @@ FIND_PACKAGE_MESSAGE_DETAILS_DL:INTERNAL=[true][v()]
 //Details about finding GTS
 FIND_PACKAGE_MESSAGE_DETAILS_GTS:INTERNAL=[true][v()]
 //Details about finding JSONCPP
-FIND_PACKAGE_MESSAGE_DETAILS_JSONCPP:INTERNAL=[true][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_JSONCPP:INTERNAL=[TRUE][v()]
 //Details about finding OpenCV
 FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr][v3.2.0(3.2)]
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.1()]
 //Details about finding Protobuf
-FIND_PACKAGE_MESSAGE_DETAILS_Protobuf:INTERNAL=[/usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread;-lpthread][/usr/include][v3.0.0(2.3.0)]
+FIND_PACKAGE_MESSAGE_DETAILS_Protobuf:INTERNAL=[/usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread;-lpthread;-lpthread][/usr/include][v3.0.0(3)]
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python2][v2.7.17()]
 //Details about finding SWSCALE
@@ -1629,13 +1651,13 @@ FIND_PACKAGE_MESSAGE_DETAILS_Simbody:INTERNAL=[/usr/include/simbody][v()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding UUID
-FIND_PACKAGE_MESSAGE_DETAILS_UUID:INTERNAL=[true][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_UUID:INTERNAL=[TRUE][v()]
 //Details about finding YAML
-FIND_PACKAGE_MESSAGE_DETAILS_YAML:INTERNAL=[true][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_YAML:INTERNAL=[TRUE][v()]
 //Details about finding ZIP
-FIND_PACKAGE_MESSAGE_DETAILS_ZIP:INTERNAL=[true][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_ZIP:INTERNAL=[TRUE][v()]
 //Details about finding ZeroMQ
-FIND_PACKAGE_MESSAGE_DETAILS_ZeroMQ:INTERNAL=[true][v(4)]
+FIND_PACKAGE_MESSAGE_DETAILS_ZeroMQ:INTERNAL=[TRUE][v(4)]
 //Result of TRY_COMPILE
 FREEIMAGE_COMPILES:INTERNAL=TRUE
 //Result of TRY_RUN
@@ -1748,8 +1770,6 @@ LAPACK_Accelerate_LIBRARY-ADVANCED:INTERNAL=1
 LAPACK_goto2_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: LAPACK_lapack_LIBRARY
 LAPACK_lapack_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: LAPACK_lapack_WORKS
-LAPACK_lapack_WORKS-ADVANCED:INTERNAL=1
 //Have function cheev_
 LAPACK_lapack_WORKS:INTERNAL=1
 //ADVANCED property for variable: LAPACK_openblas_LIBRARY
@@ -2015,7 +2035,6 @@ TINYXML2_CFLAGS:INTERNAL=
 TINYXML2_CFLAGS_I:INTERNAL=
 TINYXML2_CFLAGS_OTHER:INTERNAL=
 TINYXML2_INCLUDEDIR:INTERNAL=/usr/include
-TINYXML2_INCLUDE_DIRS:INTERNAL=
 TINYXML2_LDFLAGS:INTERNAL=-ltinyxml2
 TINYXML2_LDFLAGS_OTHER:INTERNAL=
 TINYXML2_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
@@ -2085,7 +2104,6 @@ YAML_CFLAGS:INTERNAL=
 YAML_CFLAGS_I:INTERNAL=
 YAML_CFLAGS_OTHER:INTERNAL=
 YAML_INCLUDEDIR:INTERNAL=/usr/include
-YAML_INCLUDE_DIRS:INTERNAL=
 YAML_LDFLAGS:INTERNAL=-lyaml
 YAML_LDFLAGS_OTHER:INTERNAL=
 YAML_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
@@ -2157,7 +2175,6 @@ ZeroMQ_CFLAGS:INTERNAL=
 ZeroMQ_CFLAGS_I:INTERNAL=
 ZeroMQ_CFLAGS_OTHER:INTERNAL=
 ZeroMQ_INCLUDEDIR:INTERNAL=/usr/include
-ZeroMQ_INCLUDE_DIRS:INTERNAL=
 ZeroMQ_LDFLAGS:INTERNAL=-lzmq
 ZeroMQ_LDFLAGS_OTHER:INTERNAL=
 ZeroMQ_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
